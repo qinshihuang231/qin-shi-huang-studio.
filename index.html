@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>QIN SHI HUANG STUDIO</title>
+<style>
+:root {
+  --gold: #d8b45a;
+  --black: #0b0b0b;
+  --panel: #171717;
+  --text: #f5f0e4;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: var(--black);
+  color: var(--text);
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+header {
+  padding: 24px 7%;
+  border-bottom: 1px solid #493b1d;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+.brand { color: var(--gold); font-weight: bold; letter-spacing: 2px; }
+nav a { color: var(--text); text-decoration: none; margin-left: 18px; }
+.hero { text-align: center; padding: 85px 20px; }
+.hero h1 { color: var(--gold); font-size: clamp(32px, 6vw, 58px); }
+.hero p { max-width: 650px; margin: 18px auto 28px; color: #ccc; }
+.button {
+  display: inline-block; padding: 12px 22px; margin: 5px;
+  background: var(--gold); color: #111; text-decoration: none;
+  font-weight: bold; border-radius: 4px;
+}
+.button.secondary { background: transparent; color: var(--gold); border: 1px solid var(--gold); }
+section { padding: 45px 7%; }
+h2 { color: var(--gold); text-align: center; margin-bottom: 28px; }
+.grid { display: grid; grid-template-columns: repeat(auto-fit,minmax(220px,1fr)); gap: 18px; }
+.card { background: var(--panel); border: 1px solid #393020; padding: 24px; border-radius: 8px; }
+.card h3 { color: var(--gold); }
+.card p { color: #ccc; }
+.note { color: #bbb; text-align: center; max-width: 760px; margin: auto; }
+form { max-width: 600px; margin: auto; }
+input, select, textarea {
+  width: 100%; padding: 13px; margin: 8px 0 14px;
+  background: #202020; color: white; border: 1px solid #555; border-radius: 4px;
+}
+label { display: block; }
+button { cursor: pointer; border: 0; }
+footer { text-align: center; padding: 28px; border-top: 1px solid #493b1d; color: #aaa; }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="brand">👑 QIN SHI HUANG STUDIO</div>
+  <nav>
+    <a href="#services">Services</a>
+    <a href="#custom">Custom Order</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main>
+  <div class="hero">
+    <h1>Designed With Distinction.</h1>
+    <p>Premium digital design, personalized templates, creative printing,
+    and custom projects for customers worldwide.</p>
+    <a class="button" href="#services">Explore Services</a>
+    <a class="button secondary" href="#custom">Request a Design</a>
+  </div>
+
+  <section id="services">
+    <h2>Our Services</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Digital Design</h3>
+        <p>Personalized graphics, invitations, posters, and digital artwork.</p>
+      </div>
+      <div class="card">
+        <h3>Document Templates</h3>
+        <p>Professional business forms, editable templates, CVs, and resumes.</p>
+      </div>
+      <div class="card">
+        <h3>Printing Services</h3>
+        <p>Ask about eligible custom printing projects, available formats, and shipping.</p>
+      </div>
+      <div class="card">
+        <h3>Novelty & Prop Design</h3>
+        <p>Original fictional designs for films, theatre, games, and collections.
+        Props are clearly marked as fictional and not valid identification.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>How Ordering Works</h2>
+    <div class="grid">
+      <div class="card"><h3>1. Choose</h3><p>Browse the services and decide what you need.</p></div>
+      <div class="card"><h3>2. Request</h3><p>Send your project details and preferred format.</p></div>
+      <div class="card"><h3>3. Confirm</h3><p>We'll confirm the price, delivery details, and payment method before work begins.</p></div>
+    </div>
+  </section>
+
+  <section id="custom">
+    <h2>Request a Custom Project</h2>
+    <p class="note">Complete the form to prepare an order enquiry. It will open your email app; it does not take payment or submit automatically.</p>
+    <form action="mailto:YOUR_EMAIL_HERE" method="post" enctype="text/plain">
+      <label for="name">Your name</label>
+      <input id="name" name="Name" required>
+      <label for="email">Email address</label>
+      <input id="email" name="Email" type="email" required>
+      <label for="service">Service</label>
+      <select id="service" name="Service">
+        <option>Digital design</option>
+        <option>Business document template</option>
+        <option>Printing enquiry</option>
+        <option>Fictional film or theatre prop</option>
+        <option>Other lawful project</option>
+      </select>
+      <label for="details">Describe your project</label>
+      <textarea id="details" name="Project details" rows="5" required></textarea>
+      <button class="button" type="submit">Prepare Enquiry</button>
+    </form>
+  </section>
+
+  <section id="contact">
+    <h2>Worldwide Service</h2>
+    <p class="note">Serving customers internationally, including the USA and Europe.
+    Contact us to discuss availability, quotations, and delivery options.</p>
+    <p class="note">Telegram: @QinShiHuangStudioBot</p>
+  </section>
+</main>
+
+<footer>
+  <p>© 2026 QIN SHI HUANG STUDIO</p>
+  <p>Creative design and lawful printing services. Fictional props are not government-issued identification.</p>
+</footer>
+
+</body>
+</html>
